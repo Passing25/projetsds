@@ -1,0 +1,143 @@
+body {
+	background-color: rgb(148, 148, 148);
+}
+.form-wrapper, aside {
+	padding: 30px 20px;
+    background: #545454;
+    color: white;
+    margin-top: 20px;
+    border: 3px solid #6f6975;
+}
+.intro {
+	border: 5px solid #925e00;
+    background-color: #404040;
+    padding: 10px 20px;
+    color: orange;
+    margin-bottom: 20px;
+}
+.intro h1 {
+	font-family: 'Frijole', cursive;
+	margin: 0;
+    margin-bottom: 10px;
+}
+#form label {
+	margin-top: 5px;
+}
+#form .form-group input,
+#form .form-group select,
+#form .form-group textarea {
+	width: 60%;
+	background-color: #504b49;
+	border: 1px solid #886f4c;
+	color: orange;
+}
+#form .form-group input:hover,
+#form .form-group select:hover,
+#form .form-group textarea:hover {
+	border: 2px solid #886f4c;
+}
+#form .form-group input:focus,
+#form .form-group select:focus,
+#form .form-group textarea:focus {
+	border: 2px solid orange;
+}
+#form .name, 
+#form .gender, 
+#form .dob, 
+#form .contacts,
+#form .bio {
+	border-bottom: 1px solid orange;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+#form .form-group #month,
+#form .form-group #day,
+#form .form-group #year {
+	width: 15%;
+
+}
+#form .form-group option {
+	background-color: white;
+	color: #272628;
+}
+.dob label {
+	display: block;
+}
+.dob select {
+	display: inline-block;
+}
+#form .btn {
+	background-color: #504b49;
+    color: orange;
+    border: 1px solid orange;
+    margin-top: 20px;
+} 
+#form .btn:focus {
+	border: 1px solid orangered;
+}
+
+/*OUTPUT SECTION*/
+.image-output, 
+.output {
+	margin-top: 30px;
+}
+.image-output {
+}
+.output img {
+	float: left;
+	margin-right: 50px;
+	width: 240px;
+	height: 240px;
+}
+.output h3, 
+.output p {
+	color: orange;
+}
+.output span {
+	font-size: 20px;
+	color: white;
+}
+.error {
+	margin-top: 10px;
+    color: orangered;
+    font-size: 19px;
+}
+/* footer {
+	text-align: center;
+	padding: 15px;
+	background-color: #272628;
+    color: white;
+    margin-top: 20px;
+    border-top: 1px solid orange;
+}
+footer a {
+	color: orange;
+}
+footer a:hover {
+	color: orangered;
+	text-decoration: none;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+@media(max-width: 650px) {
+	#form .form-group input,
+	#form .form-group select,
+	#form .form-group textarea {
+		width: 100%;
+	} 
+	#form .form-group #month,
+	#form .form-group #day,
+	#form .form-group #year {
+	width: unset;
+	}
+	.output img {
+		float: none;
+
+	}
+}
